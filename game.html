@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <script src="./javascript/index.js" defer></script>
+    <title>Your Game</title>
+  </head>
+  <body>
+    <audio id="audio" src="./sounds/pop3.mp3" preload="metadata"></audio>
+    <div class="game">
+      <div class="timeCountdown">
+        <div class="timeIcon"><img src="./images/time.png" alt="time" /></div>
+        <div class="timeDetails">
+          <p>Time Left</p>
+          <p class="time-seconds"><span class="timer">60</span> seconds</p>
+        </div>
+      </div>
+
+      <div class="questions">
+        <p class="question"></p>
+      </div>
+
+      <div class="answer">
+        <h3>Answer</h3>
+        <input type="text" name="userInput" id="userInput" />
+        <!-- <input type="button" value="submit" class="submit" /> -->
+        <a class="submit">Submit</a>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="head">Time Over :)</div>
+        <a href="./game.html" class="btn-again">Try Again</a>
+      </div>
+    </div>
+  </body>
+</html>
